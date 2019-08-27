@@ -7,7 +7,7 @@ usage() {
 }
 
 audit() {
-  tmp_dir=$(mktemp -d -t ci-XXXXXXXXXX)
+  tmp_dir=$(mktemp -d -t auditso-XXXXXXXXXX)
   trap "{ rm -rf $tmp_dir; }" EXIT
 
   target=$1
